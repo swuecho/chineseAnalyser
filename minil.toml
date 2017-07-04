@@ -1,0 +1,4 @@
+name = "LucyX-Analysis-Analyzer-Chinese"
+# badges = ["travis"]
+module_maker="ModuleBuildTiny"
+
