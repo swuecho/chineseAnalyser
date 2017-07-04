@@ -1,4 +1,3 @@
-requires 'perl', '5.10';
 requires 'Lucy';
 requires 'utf8::all';
 
