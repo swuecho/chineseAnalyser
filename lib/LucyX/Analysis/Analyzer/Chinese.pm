@@ -3,7 +3,6 @@ package LucyX::Analysis::Analyzer::Chinese;
 our $VERSION = "0.01";
 
 use v5.10;
-use Encode qw(decode_utf8);
 use Lingua::ZH::Jieba;
 
 use base qw( Lucy::Analysis::Analyzer );
@@ -28,7 +27,7 @@ sub transform {
 sub transform_text {
     my ($self, $text) = @_;
     my $inversion = Lucy::Analysis::Inversion->new;
-    my $tokens = $jieba->cut_for_search_ex(($text));
+    my $tokens = $jieba->cut_for_search_ex($text);
     $inversion->append(
        Lucy::Analysis::Token->new(text =>$_->[0],
                                   start_offset=> $_->[1] ,
