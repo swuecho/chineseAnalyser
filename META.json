@@ -42,7 +42,10 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "v5.10.0"
+            "Lingua::ZH::Jieba" : "0",
+            "Lucy" : "0",
+            "perl" : "v5.10.0",
+            "utf8::all" : "0"
          }
       },
       "test" : {
